@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+:root {
+  --mainbg: #fff;
+  --maincl: #161616;
+  --hover_cl: #98f2f7;
+  --dimcl: #ffffffa1;
+  --dimsmain: #6a6a6a3f;
+  --maindim: #494949;
+  /* 646464 */
+  --sadcl: #3f3f3f;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: var(--mainbg);
+  color: var(--maincl);
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-link {
-  color: #61dafb;
+a {
+  text-decoration: none;
+  color: var(--maincl);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+a:hover {
+  text-decoration: none;
+  color: var(--maincl);
+}
+
+hr { 
+  background-color: var(--maindim);
+  margin-top: 10px;
+}
+
+::-webkit-scrollbar{ 
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --mainbg: #161616;
+    --maincl: white;
+    --hover_cl: palegreen;
+    --dimcl: #161616d7;
+    --dimsmain: #ffffff3f;
+    --maindim: #eaeaea;
+    /* 646464 */
+    --sadcl: #f4f4f4;
   }
 }
