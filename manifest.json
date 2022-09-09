@@ -1,0 +1,12 @@
+{
+  "short_name": "Sanity",
+  "name": "Sanity",
+  "icons": [
+    {
+      "src": "./Images/s.png",
+      "type": "image/png",
+      "sizes": "364364"
+    }
+  ],
+  "display": "standalone"
+}
